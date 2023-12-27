@@ -1,0 +1,181 @@
+/* aide Marion 1er cours*/
+:root {
+    font-size: 16px;
+
+}
+
+/* :root correspond à l'élément "racine" du document */
+/* font-size permet de définir la taille d'un élément  */
+/* 16 px signifie 16 pixels */
+/* au final : Tout le texte contenu dans la balise racine devra mesurer 16 pixels */
+/* En CSS la propriété font-size est héritée par tous les enfants */
+
+* {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(111, 134, 134);
+}
+
+/*
+    "*" correspond à TOUS les éléments du document (sélecteur universel)
+    dans ce cas, on applique le même CSS à tous les éléments du document 
+*/
+
+body {
+    /*
+    to top : vers le haut
+    to bottom : vers le bas
+    to left : vers la gauche
+    to right : vers la droite */
+   <
+}
+
+/*
+    vw : viewport width : pourcentage de la largeur de la fenêtre du navigateur
+    vh : viewport height : pourcentage de la hauteur de la fenêtre du navigateur
+
+    Je sélectionne la balise body, et je lui demande 
+    d'avoir une hauteur qui soit égale à 
+    100% de la hauteur de la fenêtre du navigateur
+*/
+
+h1 {
+    background-color: rgba(244, 162, 224, 0.695);
+}
+
+img {
+    /* hauteur */
+    height: 250px;
+    /* largeur */
+    width: 250px;
+    /*ne pas toucher*/
+    object-fit: cover;
+}
+
+
+
+/* à copier coller en changeant le numéro img pour bouger une photo (si pas centrée)*/
+.img1 {
+    /* position droite-gauche   position haut bas */
+    object-position: 50% 25%;
+}
+
+
+p {
+    color: #0a0a0a
+}
+
+ul {
+    list-style: none;
+}
+
+em,
+li,
+strong {
+    color: blueviolet
+}
+
+h3 {
+    color: #ccd1c4; 
+}
+
+
+
+
+
+
+
+
+
+h1 {
+    text-align: center;
+    font-family: 'MedievalSharp', cursive;
+}
+
+/*
+    le texte dans le H1 est centré
+    le texte du H1 doit être affiché avec la police mediavalSharp
+    Cette police est importée à la ligne 13 grâce à la balise link
+*/
+
+h1,
+h2 {
+    text-transform: capitalize;
+}
+
+/*
+> : enfant direct
++ : suivant direct
+~ : suivantS direct
+
+"," permet de lister plusieurs éléments pour les sélectionner 
+et leur appliquer une même déclaration CSS
+*/
+
+p {
+    text-indent: 2rem;
+}
+
+/*
+    rem : une unité relative,
+    1rem correspond à la taille de la police de l'élément racine
+    on a appliqué à :root (ou html) une taille de police de 16px
+    alors 1rem fera 16px
+    donc 2rem feront 32px 
+*/
+
+ul {
+    line-height: 1.5rem;
+}
+
+/*
+    toutes les balises UL du document auront une hauteur de ligne de 1.5rem : "1.5 x 16px" ou "1.5 x 32px"
+    1rem = la taille des caractères telle que définie dans le navigateur de l'utilisateur
+    chez certains, 1 rem => 16px
+    chez d'autres, 1 rem => 32px
+    le rem est une unité relative aux besoins visuels de nos utilisateurs
+*/
+
+main>p {
+    font-weight: bold;
+}
+
+/* je sélectionne la balise p qui est enfant direct de la balise main  */
+
+section>p+p {
+    font-style: italic;
+}
+
+/* je sélectionne le paragraphe qui suit directement un autre paragraphe,  */
+/* et qui est enfant direct d'une section  */
+
+
+strong {
+    color: rgb(255, 255, 255);
+}
+
+
+.soulignement {
+    text-decoration: underline;
+}
+
+
+/*
+p, body, h1... > c'est des balises HTML que l'on peut styliser
+.chat > si on a class="chat" en HTML, on note .chat en CSS
+#chat > si on a id="chat" en HTML, on note #chat en CSS -> on évite de l'utiliser
+
+*/
+
+
+.bouton_perso {
+    display:block;
+    width: fit-content;
+    padding: 5px 8px;
+    background-color: #c24242;
+    border-radius:5px;
+    text-decoration: none;
+    margin-inline: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
